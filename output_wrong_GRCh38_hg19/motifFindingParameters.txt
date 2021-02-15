@@ -1,0 +1,1 @@
+cmd = ENCFF030XPN.bed hg19 output -size given
