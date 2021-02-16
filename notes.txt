@@ -1,3 +1,25 @@
 1. [Bio] https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001046#s2
 
 2.[Gensim] https://www.meganstodel.com/posts/callbacks/
+
+3. [Strand info during annotation] https://www.biostars.org/p/251361/
+   -annotatePeaks.pl finds motifs from both + and - strands
+
+
+** 16/2/2021 **
+
+-for now 3 clusters
+-absolute value of distance from TSS = sort of validation metric
+-top frequently occuring motifs 
+-remove similar column as duplicate columns don't have any more information
+-plot color coded module vs motifs 
+
+X=Seq
+M=Model
+m=Total No. of Topics
+
+P(X|M) = sum over m P(X,T|M)
+
+P(X,T)=P(X|T)P(T)
+
+[DOUBT] +/- strand

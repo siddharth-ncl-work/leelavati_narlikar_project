@@ -1,1 +1,1 @@
-cmd = ENCFF030XPN.bed hg19 output -size given
+cmd = test_ENCFF030XPN_GRCh38.bed hg38 output_wrong_GRCh38_hg19/ -find output_wrong_GRCh38_hg19/homerResults/motif1.motif
