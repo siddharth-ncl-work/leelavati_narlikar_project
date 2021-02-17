@@ -1,6 +1,6 @@
-1. [Bio] https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001046#s2
+1. [Biology Paper] https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001046#s2
 
-2.[Gensim] https://www.meganstodel.com/posts/callbacks/
+2. [Gensim] https://www.meganstodel.com/posts/callbacks/
 
 3. [Strand info during annotation] https://www.biostars.org/p/251361/
    -annotatePeaks.pl finds motifs from both + and - strands
@@ -9,7 +9,7 @@
 ** 16/2/2021 **
 
 -for now 3 clusters
--absolute value of distance from TSS = sort of validation metric
+-absolute value of distance from TSS = kind of validation metric
 -top frequently occuring motifs 
 -remove similar column as duplicate columns don't have any more information
 -plot color coded module vs motifs 
@@ -22,4 +22,55 @@ P(X|M) = sum over m P(X,T|M)
 
 P(X,T)=P(X|T)P(T)
 
-[DOUBT] +/- strand
+[TASKS]
+* duplicate motifs were identified
+* iterations (int, optional) – Maximum number of iterations through the corpus when inferring the topic distribution of a corpus
+* https://radimrehurek.com/gensim/models/ldamodel.html
+
+[Questions]
+1. which strand to use (+/-)? right now, annotatePeaks.pl finds motifs from both + and - strands
+2. How to measure similarity between two motif columns?
+3. Plot
+
+** 17/2/2021 **
+Leelavati Narlikar10:51 AM
+cisTopic
+Leelavati Narlikar10:55 AM
+ATAC-seq
+dnaseq
+DNase-seq
+RNA-seq
+Leelavati Narlikar10:56 AM
+don't
+
+Train different models by increasing number of topics
+rank each model by following metric
+likelihood of product of probality of each seq condition on model
+validation metric=prod over seq[P(Xi|M)]
+P(Xi|M)=sum over topic[P(X,Ti|M)]
+P(Xi,T)=P(Xi|T)P(T)
+we expect the value of validation metric to increase with increasing no. of topics
+validation metric: higher value is better
+
+Do this for example data as well as on real data
+
+Steps to use homer for example data:
+* background file: /home/vanka/siddharth/leelavati_narlikar_project/homer/data/genomes/hg38/preparsed/hg38.200.seq
+* convert need to convert background into 'fasta' format
+* use following command 
+>>findMotifs.pl <targetSequences.fa> fasta <output directory> -fasta <background.fa> [options]
+targetSequences.fa = example.fa
+background.fa = hg38.200.seq
+[http://homer.ucsd.edu/homer/motif/fasta.html]
+
+Future bigger picture:
+cisTopic for single cells and combine it with LDA for DNA in single cell
+https://www.nature.com/articles/s41592-019-0367-1
+
+[INFO]
+
+
+[QUESTIONS]
+
+
+****
