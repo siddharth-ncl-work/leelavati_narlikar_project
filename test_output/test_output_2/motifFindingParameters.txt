@@ -1,0 +1,1 @@
+cmd = ENCFF030XPN_GRCh38_with_ids.bed hg38 test_output_2/ -p 30 -len 0

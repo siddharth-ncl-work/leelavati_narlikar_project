@@ -5,6 +5,7 @@
 3. [Strand info during annotation] https://www.biostars.org/p/251361/
    -annotatePeaks.pl finds motifs from both + and - strands
 
+======================================================================================
 
 ** 16/2/2021 **
 
@@ -28,9 +29,11 @@ P(X,T)=P(X|T)P(T)
 * https://radimrehurek.com/gensim/models/ldamodel.html
 
 [Questions]
-1. which strand to use (+/-)? right now, annotatePeaks.pl finds motifs from both + and - strands
-2. How to measure similarity between two motif columns?
-3. Plot
+* which strand to use (+/-)? right now, annotatePeaks.pl finds motifs from both + and - strands
+* How to measure similarity between two motif columns?
+* Plot
+
+======================================================================================
 
 ** 17/2/2021 **
 Leelavati Narlikar10:51 AM
@@ -55,9 +58,9 @@ validation metric: higher value is better
 Do this for example data as well as on real data
 
 Steps to use homer for example data:
-* background file: /home/vanka/siddharth/leelavati_narlikar_project/homer/data/genomes/hg38/preparsed/hg38.200.seq
-* convert need to convert background into 'fasta' format
-* use following command 
+- background file: /home/vanka/siddharth/leelavati_narlikar_project/homer/data/genomes/hg38/preparsed/hg38.200.seq
+- convert need to convert background into 'fasta' format
+- use following command 
 >>findMotifs.pl <targetSequences.fa> fasta <output directory> -fasta <background.fa> [options]
 targetSequences.fa = example.fa
 background.fa = hg38.200.seq
@@ -67,8 +70,26 @@ Future bigger picture:
 cisTopic for single cells and combine it with LDA for DNA in single cell
 https://www.nature.com/articles/s41592-019-0367-1
 
-[INFO]
+[TASKS]
+* fasta2tab.pl, tab2fasta.pl - convert between HOMER-style sequence file and a FASTA file 
+File conversion resources: http://homer.ucsd.edu/homer/introduction/programs.html
+                           https://www.biostars.org/p/271977/
+                           https://molbiol-tools.ca/Convert.htm
+FASTA file Format: https://bioperl.org/formats/sequence_formats/FASTA_sequence_format
+                   https://zhanglab.ccmb.med.umich.edu/FASTA/
+                   https://en.wikipedia.org/wiki/FASTA_format
+* P(T):
+alpha ({numpy.ndarray, str}, optional) –
+Can be set to an 1D array of length equal to the number of expected topics that expresses our a-priori belief for the each topics’ probability. Alternatively default prior selecting strategies can be employed by supplying a string:
+’symmetric’: Default; uses a fixed symmetric prior per topic,
+’asymmetric’: Uses a fixed normalized asymmetric prior of 1.0 / (topic_index + sqrt(num_topics)),
+’auto’: Learns an asymmetric prior from the corpus (not available if distributed==True).
 
+* (Xi|T):
+get_document_topics(bow, minimum_probability=None, minimum_phi_value=None, per_word_topics=False)
+Returns
+list of (int, float) – Topic distribution for the whole document. Each element in the list is a pair of a topic’s id, and the probability that was assigned to it.
+[(0, 0.56868815), (1, 0.366404), (2, 0.064907864)]
 
 [QUESTIONS]
 

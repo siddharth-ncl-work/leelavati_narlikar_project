@@ -1,1 +1,1 @@
-cmd = test_ENCFF030XPN_GRCh38.bed hg38 test_output/ -find output_wrong_GRCh38_hg19/knownResults/known10.motif
+cmd = ENCFF030XPN_GRCh38_with_ids.bed hg38 test_output/ -p 30
