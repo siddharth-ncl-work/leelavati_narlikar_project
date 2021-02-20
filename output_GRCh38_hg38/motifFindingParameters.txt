@@ -1,1 +1,0 @@
-cmd = ENCFF030XPN_GRCh38.bed hg38 output_GRCh38_hg38/ -p 20

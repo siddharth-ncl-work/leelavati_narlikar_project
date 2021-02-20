@@ -1,0 +1,5 @@
+Its easy to manually generate the data for this system rather than to obtain it from homer
+
+*homer takes very long time with the default setting
+*need to run homer with motif length - 13,14,15,11,9
+*need to write new script to parse output and find motif frequency

@@ -1,0 +1,1 @@
+cmd = example.fa fasta output_findMotifs.pl/ -fasta hg38.200.fa -p 30

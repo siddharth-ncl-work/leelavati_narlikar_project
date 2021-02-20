@@ -5,6 +5,20 @@
 3. [Strand info during annotation] https://www.biostars.org/p/251361/
    -annotatePeaks.pl finds motifs from both + and - strands
 
+4. [Gensim LDA] https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html
+
+[HOW TO CHOOSE NO. OF PASS AND NO. OF ITERATIONS]
+- https://towardsdatascience.com/topic-modeling-and-latent-dirichlet-allocation-in-python-9bf156893c24
+
+- https://groups.google.com/g/gensim/c/OF7XL1lm8mY?pli=1
+
+- https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html
+
+- https://www.machinelearningplus.com/nlp/topic-modeling-gensim-python/#12buildingthetopicmodel
+
+- https://www.analyticsvidhya.com/blog/2016/08/beginners-guide-to-topic-modeling-in-python/
+
+- https://ourcodingclub.github.io/tutorials/topic-modelling-python/
 ======================================================================================
 
 ** 16/2/2021 **
@@ -85,7 +99,7 @@ Can be set to an 1D array of length equal to the number of expected topics that 
 ’asymmetric’: Uses a fixed normalized asymmetric prior of 1.0 / (topic_index + sqrt(num_topics)),
 ’auto’: Learns an asymmetric prior from the corpus (not available if distributed==True).
 
-* (Xi|T):
+* P(Xi|T):
 get_document_topics(bow, minimum_probability=None, minimum_phi_value=None, per_word_topics=False)
 Returns
 list of (int, float) – Topic distribution for the whole document. Each element in the list is a pair of a topic’s id, and the probability that was assigned to it.

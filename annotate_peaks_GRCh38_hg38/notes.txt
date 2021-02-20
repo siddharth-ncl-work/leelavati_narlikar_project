@@ -1,4 +1,0 @@
-command used:
-
-annotatePeaks.pl ENCFF030XPN_GRCh38_with_ids.bed hg38 -m output_GRCh38_hg38/knownResults/known*.motif -noann -nmotifs > annotate_peaks_GRCh38_hg38/annotate_peaks_data_GRCh38_hg38.tsv
-
