@@ -19,6 +19,8 @@
 - https://www.analyticsvidhya.com/blog/2016/08/beginners-guide-to-topic-modeling-in-python/
 
 - https://ourcodingclub.github.io/tutorials/topic-modelling-python/
+
+- https://www.machinelearningplus.com/nlp/topic-modeling-gensim-python/
 ======================================================================================
 
 ** 16/2/2021 **
@@ -106,6 +108,6 @@ list of (int, float) – Topic distribution for the whole document. Each element
 [(0, 0.56868815), (1, 0.366404), (2, 0.064907864)]
 
 [QUESTIONS]
-
+* likelihood metric is not working as expected
 
 ****
