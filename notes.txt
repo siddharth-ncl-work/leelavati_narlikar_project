@@ -7,7 +7,19 @@
 
 4. [Gensim LDA] https://radimrehurek.com/gensim/auto_examples/tutorials/run_lda.html
 
-[HOW TO CHOOSE NO. OF PASS AND NO. OF ITERATIONS]
+5. [OTHER LDA LIBRARIES]
+https://ieeexplore.ieee.org/abstract/document/8250563
+
+=======================================================
+
+* [GENSIM PAPERS]
+- https://ieeexplore.ieee.org/abstract/document/9314588
+
+- https://airccj.org/CSCP/vol6/csit65316.pdf
+
+=========================================================
+
+* [HOW TO CHOOSE NO. OF PASS AND NO. OF ITERATIONS]
 - https://towardsdatascience.com/topic-modeling-and-latent-dirichlet-allocation-in-python-9bf156893c24
 
 - https://groups.google.com/g/gensim/c/OF7XL1lm8mY?pli=1
@@ -21,7 +33,20 @@
 - https://ourcodingclub.github.io/tutorials/topic-modelling-python/
 
 - https://www.machinelearningplus.com/nlp/topic-modeling-gensim-python/
-======================================================================================
+
+==============================================================
+
+* [HOW TO EVALUATE LDA MODELS]
+- As a rule of thumb for a good LDA model, the perplexity score should be low while coherence should be high. (https://ieeexplore.ieee.org/abstract/document/9314588)
+
+-https://towardsdatascience.com/evaluate-topic-model-in-python-latent-dirichlet-allocation-lda-7d57484bb5d0
+
+-https://datascienceplus.com/evaluation-of-topic-modeling-topic-coherence/
+
+-https://ieeexplore.ieee.org/abstract/document/8501887
+
+-https://stackabuse.com/python-for-nlp-working-with-the-gensim-library-part-2/
+=======================================================================
 
 ** 16/2/2021 **
 
@@ -49,7 +74,7 @@ P(X,T)=P(X|T)P(T)
 * How to measure similarity between two motif columns?
 * Plot
 
-======================================================================================
+========================================================================
 
 ** 17/2/2021 **
 Leelavati Narlikar10:51 AM
@@ -106,6 +131,9 @@ get_document_topics(bow, minimum_probability=None, minimum_phi_value=None, per_w
 Returns
 list of (int, float) – Topic distribution for the whole document. Each element in the list is a pair of a topic’s id, and the probability that was assigned to it.
 [(0, 0.56868815), (1, 0.366404), (2, 0.064907864)]
+
+* How to evaluate LDA models:
+As a rule of thumb for a good LDA model, the perplexity score should be low while coherence should be high. (https://ieeexplore.ieee.org/abstract/document/9314588)
 
 [QUESTIONS]
 * likelihood metric is not working as expected
