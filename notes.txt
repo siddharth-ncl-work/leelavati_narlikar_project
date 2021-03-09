@@ -149,7 +149,7 @@ my P(X|T) is actually P(T|X)
 [TASKS]
 1. Reverse Engineer P(X|T) and P(T|X) from 'model.show_topics()' (ie. term_topic distribtion)
 
-2. Add 6th random motif in the whole corpus with the probability of 10% and check the model perfomance (ie. ARI)
+2. Add 6th random motif in example.fa (whole corpus) with the probability of 10% and check the model perfomance (ie. ARI)
 
 3. For example.fa and fixed 3 topics evaluate lda(calculate different metrics like ARI) on a grid of 'iteration' and 'passes' (ie. ARI)
 

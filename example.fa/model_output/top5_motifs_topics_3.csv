@@ -1,3 +1,4 @@
 pred_topic,top_motif
-0,"[('motif_1', 478), ('motif_4', 325)]"
-1,"[('motif_2', 520), ('motif_3', 480), ('motif_1', 86), ('motif_5', 42)]"
+0,"[('motif_2', 519), ('motif_3', 480), ('motif_1', 114), ('motif_5', 42)]"
+1,"[('motif_1', 135)]"
+2,"[('motif_1', 343), ('motif_4', 343)]"

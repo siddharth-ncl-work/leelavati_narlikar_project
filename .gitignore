@@ -2,3 +2,7 @@
 **/.ipynb_checkpoints
 **/__pycache__
 *.pyc
+example.fa/hg38.200.fa
+example.fa/hg38.200.seq
+test_output/test_hg38.200.fa
+test_output/test_hg38.200_2.fa
