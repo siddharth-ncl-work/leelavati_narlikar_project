@@ -160,7 +160,7 @@ my P(X|T) is actually P(T|X)
 ** 24/02/2021 **
 
 [TASKS]
-1. check whether sum over motifs P(mj|T) is equal to one
+1. check whether sum over motifs P(mj|T) is equal to one = Checked, it does sum to 1
 
 2. Generate a clean dataset (as follows). Check the value of alpha obtained from the trained gensim model on this clean data.
 45% - motif_1,2
