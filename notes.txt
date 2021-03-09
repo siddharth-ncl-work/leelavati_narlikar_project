@@ -166,5 +166,6 @@ my P(X|T) is actually P(T|X)
 45% - motif_1,2
 45% - motif_3,4
 10% - motif_5,6
+symmetric,asymmetric,auto
 
 3. Check how LDA Model works
