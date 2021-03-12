@@ -169,3 +169,8 @@ my P(X|T) is actually P(T|X)
 symmetric,asymmetric,auto
 
 3. Check how LDA Model works
+
+==============================================================================
+
+**12-03-2021**
+
