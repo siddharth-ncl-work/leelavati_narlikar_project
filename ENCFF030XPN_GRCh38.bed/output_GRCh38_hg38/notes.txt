@@ -1,0 +1,5 @@
+[NOT SURE THOUGH]
+
+http://homer.ucsd.edu/homer/ngs/peakMotifs.html
+
+findMotifsGenome.pl ENCFF030XPN_GRCh38.bed hg38 output_GRCh38_hg38/ -p 20

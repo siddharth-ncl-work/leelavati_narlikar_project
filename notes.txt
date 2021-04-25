@@ -1,3 +1,17 @@
+Initial DATA:
+
+http://homer.ucsd.edu/homer/motif/
+
+Homer is a program that will identify enriched motifs and also map them for you. See if you can install it.
+
+You can download this "narrowPeak" file which denotes "open" regions in a human embryonic stem cells:
+
+https://www.encodeproject.org/files/ENCFF030XPN/
+
+See if you understand the fields of the narrowpeak file (you should get pointers if you google it).
+
+======================================================
+
 1. [Biology Paper] https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001046#s2
 
 2. [Gensim] https://www.meganstodel.com/posts/callbacks/
@@ -174,3 +188,44 @@ symmetric,asymmetric,auto
 
 **12-03-2021**
 
+
+P(D|theta)
+P(theta | D)
+P(theta)
+
+2/3
+101/102
+
+P(theta | D) = P(D | theta) * P(theta) / P(D)
+max P(theta | D)
+
+
+gifford
+https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-016-3434-3
+
+[TASKS]
+1. Add more motifs in example.fa until it ARI breaks
+motif 7,8...motif N
+sample amount of motifs from ~ beta distribution
+
+2. For example.fa, increase the number of topics and check if you get empty topics
+
+==============================================================
+
+**12-04-2021**
+
+(Reproduce-1)
+
+TASKS-
+1. [DONE] Calculate ARI between their clusters and my clusters (ie. reproduced clusters) - Not possible because each region is assigned to the multiple modules
+
+2. [DONE] Check if its possible to set max_topics in HDP - There is not parameter for max topics
+
+3. Get similar results for K562 cell using DNase-seq data
+  - https://www.encodeproject.org/search/?searchTerm=k562+dnase+hypersensitivity&type=Experiment&status=released&assay_title=DNase-seq
+  - https://www.encodeproject.org/experiments/ENCSR000EOT/
+  - Choose either replicate 1 or 2 (https://www.encodeproject.org/files/ENCFF638QFS/ or https://www.encodeproject.org/files/ENCFF784DIM/)
+  - Find the motifs using Homer
+  - cluster the regions using HDP modules
+  - cluster TFs using Hirarchical clustering
+  - Get ChIP-seq data (from ENCODE) for a particular motif and cross-check if the region is present in the ChIP-seq data for that particular motif
